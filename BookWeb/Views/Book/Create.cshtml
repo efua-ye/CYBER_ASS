@@ -1,0 +1,60 @@
+﻿@model BookWeb.Entities.Book
+@{
+    ViewData["Title"] = "Book";
+}
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Book</h1>
+
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <form asp-action="Create" method="post" class="mt-4">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Title">Title</label>
+                        <input type="text" asp-for="Title" class="form-control" placeholder="Title" required="">
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AuthorId">Author ID</label>
+                        <input type="text" asp-for="AuthorId" class="form-control" placeholder="Enter Author ID" required="">
+                        <span asp-validation-for="AuthorId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="GerneID">Gerne ID</label>
+                        <input type="text" asp-for="GerneID" class="form-control" placeholder="Enter Genre ID" required="">
+                        <span asp-validation-for="GerneID" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ISBN">Gerne ID</label>
+                        <input type="text" asp-for="ISBN" class="form-control" placeholder="Enter ISBN" required="">
+                        <span asp-validation-for="ISBN" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="YearPublish">Year Published</label>
+                        <input type="text" asp-for="YearPublish" class="form-control" placeholder="Enter the Year Published" required="">
+                        <span asp-validation-for="YearPublish" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Rating">Rating</label>
+                        <input type="text" asp-for="Rating" class="form-control" placeholder="Enter Book Rating" required="">
+                        <span asp-validation-for="Rating" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Summary">Summary</label>
+                        <input type="text" asp-for="Summary" class="form-control" placeholder="Enter Book Summary" required="">
+                        <span asp-validation-for="Summary" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-success mr-2">Submit</button>
+                    <button type="submit" class="btn btn-dark">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
