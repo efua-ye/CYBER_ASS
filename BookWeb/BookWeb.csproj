@@ -26,12 +26,6 @@
     <Content Update="Views\Book\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\User\Create.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
-    <Content Update="Views\User\Index.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
     <Content Update="Views\Reader\Create.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

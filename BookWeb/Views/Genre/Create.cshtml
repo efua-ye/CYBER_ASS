@@ -1,11 +1,11 @@
-﻿@model BookWeb.Entities.Author
+﻿@model BookWeb.Entities.Genre
 @{
-    ViewData["Title"] = "Author";
+    ViewData["Title"] = "Genre";
 }
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Authors</h1>
+    <h1 class="h3 mb-2 text-gray-800">Genres</h1>
 
 
     <!-- DataTales Example -->
@@ -23,11 +23,7 @@
             <div class="table-responsive">
                 <form asp-action="Create" method="post" class="mt-4">
                     <div asp-validation-summary="All" class="text-danger"></div>
-                    <div class="form-group">
-                        <label asp-for="Title">Title</label>
-                        <input type="text" asp-for="Title" class="form-control" placeholder="Title" required="">
-                        <span asp-validation-for="Title" class="text-danger"></span>
-                    </div>
+                   
                     <div class="form-group">
                         <label asp-for="Name">Name</label>
                         <input type="text" asp-for="Name" class="form-control" id="name" placeholder="Enter Author Name" required="">

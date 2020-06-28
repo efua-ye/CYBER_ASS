@@ -75,7 +75,7 @@ using BookWeb.Models;
             ");
             EndContext();
             BeginContext(738, 175, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d163f28a3da9475c8dbf93bb3af588f0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5b8e39d2a78491784c33ae71f4c2755", async() => {
                 BeginContext(849, 60, true);
                 WriteLiteral("<i class=\"fas fa-download fa-sm text-white-50\"></i> New Book");
                 EndContext();

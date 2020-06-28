@@ -1,11 +1,11 @@
-﻿@model IEnumerable<BookWeb.Entities.Author>
+﻿@model IEnumerable<BookWeb.Entities.Reader>
 @{
-    ViewData["Title"] = "Author";
+    ViewData["Title"] = "Reader";
 }
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Authors</h1>
+    <h1 class="h3 mb-2 text-gray-800">Readers</h1>
     
 
     <!-- DataTales Example -->
@@ -15,7 +15,7 @@
         </div>
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <div class="col-md-12 col-12 align-self-center">
-                <a asp-controller="Author" asp-action="Create" class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>New Author</a>
+                <a asp-controller="Reader" asp-action="Create" class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>New Reader</a>
             @*</div>
             <a href="/Author" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Create New Author</a>
         </div>*@
@@ -25,10 +25,11 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Title</th>
                             <th>Name</th>
-                            <th>Created By</th>
-                            <th>Date Created</th>
+                            <th>Favourite Book</th>
+                            <th>FavouriteAuthor</th>
+                            <th>FavouritePublisher</th>
+                            <th>FavouriteGenre</th>
                         </tr>
                     </thead>
                     @*<tfoot>
@@ -48,17 +49,18 @@
                             <td>61</td>
                             <td>2011/04/25</td>
                         </tr>*@
-                        @foreach (var author in Model)
+                        @foreach (var reader in Model)
                         {
-                            <tr>
-                                <td>@author.Id</td>
-                                <td>@author.Title </td>
-                                <td>@author.Name  </td>
-                                <td>@author.CreatedBy  </td>
-                                <td>@author.DateCreated    </td>
-                                <td><a asp-action="Edit" asp-route-id="@author.Id" alt="Edit"><i class="fa fa-pencil m-r-10" aria-hidden="true"></i></a> </td>
-                                <td><a asp-action="Delete" asp-route-id="@author.Id"><i class="fa fa-trash-o m-r-10" aria-hidden="true"></i></a> </td>
-                            </tr>
+                        <tr>
+                            <td>@reader.Id</td>
+                            <td>@reader.Name </td>
+                            <td>@reader.FavouriteBook  </td>
+                            <td>@reader.FavouriteAuthor  </td>
+                            <td>@reader.FavouritePublisher  </td>
+                            <td>@reader.FavouriteGenre    </td>
+                            <td><a asp-action="Edit" asp-route-id="@reader.Id" alt="Edit"><i class="fa fa-pencil m-r-10" aria-hidden="true"></i></a> </td>
+                            <td><a asp-action="Delete" asp-route-id="@reader.Id"><i class="fa fa-trash-o m-r-10" aria-hidden="true"></i></a> </td>
+                        </tr>
                         }
                     </tbody>
                 </table>

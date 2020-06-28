@@ -1,4 +1,4 @@
-﻿@model BookWeb.Entities.Author
+﻿@model BookWeb.Entities.Reader
 @{
     ViewData["Title"] = "Author";
 }
@@ -19,19 +19,35 @@
             </div>
             <a href="/Author" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Create New Author</a>
         </div>*@
+       
         <div class="card-body">
             <div class="table-responsive">
                 <form asp-action="Create" method="post" class="mt-4">
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="form-group">
-                        <label asp-for="Title">Title</label>
-                        <input type="text" asp-for="Title" class="form-control" placeholder="Title" required="">
-                        <span asp-validation-for="Title" class="text-danger"></span>
+                        <label asp-for="Name">Name</label>
+                        <input type="text" asp-for="Name" class="form-control" placeholder="Enter Name" required="">
+                        <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Name">Name</label>
-                        <input type="text" asp-for="Name" class="form-control" id="name" placeholder="Enter Author Name" required="">
-                        <span asp-validation-for="Name" class="text-danger"></span>
+                        <label asp-for="FavouriteBook">Favourite Book</label>
+                        <input type="text" asp-for="FavouriteBook" class="form-control" id="name" placeholder="Enter Favourite Book" required="">
+                        <span asp-validation-for="FavouriteBook" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FavouriteAuthor">Favourite Author</label>
+                        <input type="text" asp-for="FavouriteAuthor" class="form-control" id="name" placeholder="Enter Favourite Author" required="">
+                        <span asp-validation-for="FavouriteAuthor" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FavouritePublisher">Favourite Publisher</label>
+                        <input type="text" asp-for="FavouritePublisher" class="form-control" placeholder="Enter Favourite Publisher" required="">
+                        <span asp-validation-for="FavouritePublisher" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FavouriteGenre">Favourite Genre</label>
+                        <input type="text" asp-for="FavouriteGenre" class="form-control" placeholder="Enter Favourite Genre " required="">
+                        <span asp-validation-for="FavouriteGenre" class="text-danger"></span>
                     </div>
 
                     <button type="submit" class="btn btn-success mr-2">Submit</button>

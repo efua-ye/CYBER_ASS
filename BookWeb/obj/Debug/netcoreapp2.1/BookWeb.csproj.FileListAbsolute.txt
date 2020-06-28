@@ -73,5 +73,4 @@ C:\Users\GODWIN\Downloads\CYB\EFUA_BookAPI\BookWeb\obj\Debug\netcoreapp2.1\Razor
 C:\Users\GODWIN\Downloads\CYB\EFUA_BookAPI\BookWeb\obj\Debug\netcoreapp2.1\Razor\Views\Publisher\Index.g.cshtml.cs
 C:\Users\GODWIN\Downloads\CYB\EFUA_BookAPI\BookWeb\obj\Debug\netcoreapp2.1\Razor\Views\Reader\Create.g.cshtml.cs
 C:\Users\GODWIN\Downloads\CYB\EFUA_BookAPI\BookWeb\obj\Debug\netcoreapp2.1\Razor\Views\Reader\Index.g.cshtml.cs
-C:\Users\GODWIN\Downloads\CYB\EFUA_BookAPI\BookWeb\obj\Debug\netcoreapp2.1\Razor\Views\User\Create.g.cshtml.cs
-C:\Users\GODWIN\Downloads\CYB\EFUA_BookAPI\BookWeb\obj\Debug\netcoreapp2.1\Razor\Views\User\Index.g.cshtml.cs
+C:\Users\GODWIN\Downloads\CYB\EFUA_BookAPI\BookWeb\obj\Debug\netcoreapp2.1\BookWeb.csprojAssemblyReference.cache

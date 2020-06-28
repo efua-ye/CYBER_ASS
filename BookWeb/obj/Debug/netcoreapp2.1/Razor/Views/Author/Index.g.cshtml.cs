@@ -78,7 +78,7 @@ using BookWeb.Models;
                 ");
             EndContext();
             BeginContext(559, 147, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cadb158ec4f740b7a409a0f98e7f65f8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2eb459e69e5424bb711d9fb93d13169", async() => {
                 BeginContext(657, 45, true);
                 WriteLiteral("<i class=\"mdi mdi-plus-circle\"></i>New Author");
                 EndContext();
@@ -180,7 +180,7 @@ using BookWeb.Models;
             WriteLiteral("    </td>\r\n                                <td>");
             EndContext();
             BeginContext(2595, 116, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "291c49d90e254ce080c7eb0a29bb704b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9db26f5c674d412f94e2cf278fd6193f", async() => {
                 BeginContext(2653, 54, true);
                 WriteLiteral("<i class=\"fa fa-pencil m-r-10\" aria-hidden=\"true\"></i>");
                 EndContext();
@@ -216,7 +216,7 @@ using BookWeb.Models;
             WriteLiteral(" </td>\r\n                                <td>");
             EndContext();
             BeginContext(2755, 108, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "559d33b187f84dd69c8ae353c76eb415", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "899623a02ce54e95b9fffa807637d5bd", async() => {
                 BeginContext(2804, 55, true);
                 WriteLiteral("<i class=\"fa fa-trash-o m-r-10\" aria-hidden=\"true\"></i>");
                 EndContext();
