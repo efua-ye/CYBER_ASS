@@ -2,39 +2,51 @@
 @{
     ViewData["Title"] = "Genre";
 }
-<div class="container-fluid">
-
-    <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Genres</h1>
-
-
-    <!-- DataTales Example -->
-    <div class="card shadow mb-4">
-        @*<div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">LIST</h6>
-        </div>
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <div class="col-md-12 col-12 align-self-center">
-                <a asp-controller="Author" asp-action="Create" class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>New Author</a>
-            </div>
-            <a href="/Author" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Create New Author</a>
-        </div>*@
-        <div class="card-body">
-            <div class="table-responsive">
-                <form asp-action="Create" method="post" class="mt-4">
-                    <div asp-validation-summary="All" class="text-danger"></div>
-                   
-                    <div class="form-group">
-                        <label asp-for="Name">Name</label>
-                        <input type="text" asp-for="Name" class="form-control" id="name" placeholder="Enter Author Name" required="">
-                        <span asp-validation-for="Name" class="text-danger"></span>
+<div id="page-wrapper">
+    <div class="main-page">
+        <div class="forms">
+            <div class=" form-grids row form-grids-right">
+                <div class="widget-shadow " data-example-id="basic-forms">
+                    <div class="form-title">
+                        <h4>Create New Book :</h4>
                     </div>
+                    <div class="form-body">
+                        <form asp-action="Create" method="post" class="mt-4">
+                            <div asp-validation-summary="All" class="text-danger"></div>
 
-                    <button type="submit" class="btn btn-success mr-2">Submit</button>
-                    <button type="submit" class="btn btn-dark">Cancel</button>
-                </form>
+                            <div class="form-group">
+                                <label asp-for="Name">Name</label>
+                                <input type="text" asp-for="Name" class="form-control" id="name" placeholder="Enter Author Name" required="">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-success mr-2">Submit</button>
+                            <button type="submit" class="btn btn-dark">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
+            <!-- /.container-fluid -->
         </div>
-
     </div>
-    <!-- /.container-fluid -->
+</div>
+<!-- /.container-fluid -->
+<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+</script>

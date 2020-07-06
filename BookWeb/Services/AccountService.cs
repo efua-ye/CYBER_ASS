@@ -1,6 +1,7 @@
 ﻿using BookWeb.Dtos;
 using BookWeb.Entities;
 using BookWeb.Interfaces;
+using BookWeb.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -44,7 +45,7 @@ namespace BookWeb.Services
                 }
                 return false;
             }
-            catch (Exception) 
+            catch (Exception)
             {
                 return false;
             }
@@ -101,6 +102,34 @@ namespace BookWeb.Services
             catch (Exception)
             {
                 return signInDetails;
+            }
+        }
+
+        public async Task<bool> LoginIn(LoginViewModel loginDetails)
+        {
+
+            try
+            {
+                // check if user exist
+                var checkUser = await _userManager.FindByEmailAsync(loginDetails.Email);
+
+                if (checkUser != null)
+                {
+                    //signin user
+                    var signInResult = await _signInManager.PasswordSignInAsync(checkUser, loginDetails.Password, false, false);
+                    // check if signin is successful
+                    if (signInResult.Succeeded)
+                    {
+                        return true;
+
+                    }
+
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
     }
