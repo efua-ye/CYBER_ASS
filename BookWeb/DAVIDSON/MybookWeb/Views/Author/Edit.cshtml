@@ -1,0 +1,62 @@
+﻿@model MybookWeb.Entities.Author
+@{
+    ViewData["Title"] = "Authors";
+}
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+        <div class="content-header row">
+            <div class="content-header-left col-md-4 col-12 mb-2">
+                <h3 class="content-header-title">Edit Author</h3>
+            </div>
+            <div class="content-header-right col-md-8 col-12">
+                <div class="breadcrumbs-top float-md-right">
+                    <div class="breadcrumb-wrapper mr-1">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="Author">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                Edit Author
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <!-- Basic Inputs start -->
+            <section class="basic-inputs">
+                <div class="row match-height">
+                    <div class="col-xl-4 col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Edit Author</h4>
+                            </div>
+                            <form asp-action="Edit" method="post" class="mt-4">
+                                <div class="card-block">
+                                    <div class="card-body">
+                                        <fieldset class="form-group">
+                                            <input type="text" asp-for="Title" placeholder="Title" class="form-control" id="basicInput">
+                                        </fieldset><br />
+                                        <fieldset class="form-group">
+                                            <input type="text" asp-for="Name" placeholder="Enter Author Name" class="form-control" id="basicInput">
+                                        </fieldset><br />
+                                        <fieldset class="form-group">
+                                            <input type="text" asp-for="CreatedBy" placeholder="Enter Creator" class="form-control" id="basicInput">
+                                        </fieldset><br />
+                                    </div>
+                                    <button type="submit" class="btn btn-success mr-2">Submit</button>
+                                    <button type="submit" class="btn btn-dark">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Basic Inputs end -->
+        </div>
+    </div>
+</div>
+
+

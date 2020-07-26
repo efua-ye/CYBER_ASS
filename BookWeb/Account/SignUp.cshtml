@@ -1,0 +1,80 @@
+﻿@model StaffPortal.Models.SignUpViewModel
+@{
+    //ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form" method="POST">
+                    <span class="login100-form-logo">
+                        <i class="zmdi zmdi-landscape"></i>
+                    </span>
+
+                    <span class="login100-form-title p-b-34 p-t-27">
+                        Log in
+                    </span>
+
+                    @*<div asp-validation-summary="All" class="focus-input100"></div>*@
+
+                    @*<div class="form-group">
+            <input asp-for="FirstName" class="form-control" placeholder="First Name" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>*@
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter FirstName">
+                        <input asp-for="FirstName" class="input100"  placeholder="FirstName">
+                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter LastName">
+                        <input asp-for="LastName" class="input100"  placeholder="LastName">
+                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter username">
+                        <input asp-for="Username" class="input100"  placeholder="Username">
+                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Enter Email">
+                        <input asp-for="Email" class="input100"  placeholder="Email">
+                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Enter Phone Number">
+                        <input asp-for="PhoneNo" class="input100"  placeholder="Phone Number">
+                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter password">
+                        <input asp-for="Password" class="input100"  placeholder="Password">
+                        <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                    </div>
+                    <div class="contact100-form-checkbox">
+                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                        <label class="label-checkbox100" for="ckb1">
+                            Remember me
+                        </label>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button asp-action="Signup" class="login100-form-btn" type="submit">
+                            SignUp
+                        </button>
+                    </div>
+
+                    @*<div class="form-group text-center mt-3">
+            <div class="col-xs-12">
+                <button asp-action="Signup" class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Create Account</button>
+            </div>
+        </div>*@
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+  
